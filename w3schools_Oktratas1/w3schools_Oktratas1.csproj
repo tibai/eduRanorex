@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{9D03E285-03BC-48C9-B3E9-C9CAD527573C}</ProjectGuid>
+    <TargetFrameworkProfile />
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>w3schools_Oktratas1</RootNamespace>
+    <AssemblyName>w3schools_Oktratas1</AssemblyName>
+    <RanorexVersion>7.1</RanorexVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <RanorexTargetsPath>$(MSBuildExtensionsPath)\Ranorex$(RanorexVersion)\Ranorex.MSBuild.Targets</RanorexTargetsPath>
+    <projectdefaultrepository>8a12b9f0-ed8b-445a-9637-4e91214c9341</projectdefaultrepository>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ranorex.Core" />
+    <Reference Include="Ranorex.Plugin.Cef" />
+    <Reference Include="Ranorex.Plugin.ChromeWeb" />
+    <Reference Include="Ranorex.Plugin.Flex" />
+    <Reference Include="Ranorex.Plugin.Java" />
+    <Reference Include="Ranorex.Plugin.Mobile" />
+    <Reference Include="Ranorex.Plugin.MozillaWeb" />
+    <Reference Include="Ranorex.Plugin.Msaa" />
+    <Reference Include="Ranorex.Plugin.Office" />
+    <Reference Include="Ranorex.Plugin.Qt" />
+    <Reference Include="Ranorex.Plugin.RawText" />
+    <Reference Include="Ranorex.Plugin.Sap" />
+    <Reference Include="Ranorex.Plugin.Uia" />
+    <Reference Include="Ranorex.Plugin.Web" />
+    <Reference Include="Ranorex.Plugin.WebDriver" />
+    <Reference Include="Ranorex.Plugin.Win32" />
+    <Reference Include="Ranorex.Plugin.WinForms" />
+    <Reference Include="Ranorex.Plugin.Wpf" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <id>6e694b0e-7050-4873-8a96-1f98d1cf28b5</id>
+    </Compile>
+    <Compile Include="M1.cs">
+      <BoundTo>98530791-f54a-488e-a73f-8ba0949e7453</BoundTo>
+      <DependentUpon>M1.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>52239898-47f1-4e63-88fc-f8d47122a11a</id>
+    </Compile>
+    <Compile Include="M1.UserCode.cs">
+      <BoundTo>98530791-f54a-488e-a73f-8ba0949e7453</BoundTo>
+      <DependentUpon>M1.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>7d0184f3-6e2e-4c57-b093-9bca9547f3fa</id>
+    </Compile>
+    <Compile Include="M2.cs">
+      <BoundTo>2ea63ce3-7070-433b-a7f0-355876d80dda</BoundTo>
+      <DependentUpon>M2.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>262ffe3f-9f98-4e14-955f-672d743a2ab1</id>
+    </Compile>
+    <Compile Include="M2.UserCode.cs">
+      <BoundTo>2ea63ce3-7070-433b-a7f0-355876d80dda</BoundTo>
+      <DependentUpon>M2.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>656e193d-9881-449a-a2dc-fccf4eca1a4b</id>
+    </Compile>
+    <Compile Include="Program.cs">
+      <id>11ff77e3-4831-4628-a1d9-985a6cfec521</id>
+    </Compile>
+    <Compile Include="Recording1.cs">
+      <BoundTo>d5d70e60-7822-4446-b0b0-fb110de94c5e</BoundTo>
+      <DependentUpon>Recording1.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>555ba2bf-8b60-41cd-ba4b-9bc861a51ddc</id>
+    </Compile>
+    <Compile Include="Recording1.UserCode.cs">
+      <BoundTo>d5d70e60-7822-4446-b0b0-fb110de94c5e</BoundTo>
+      <DependentUpon>Recording1.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>0a1104ef-4ae9-4fea-8681-8183066bf533</id>
+    </Compile>
+    <Compile Include="w3schools_Oktratas1Repository.cs">
+      <BoundTo>8a12b9f0-ed8b-445a-9637-4e91214c9341</BoundTo>
+      <DependentUpon>w3schools_Oktratas1Repository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+      <id>4ba16af2-76db-4ca7-89bf-153122b42011</id>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <id>a448e3d1-d887-4857-85c0-e0d75310be22</id>
+    </None>
+    <None Include="M1.rxrec">
+      <BoundTo>8a12b9f0-ed8b-445a-9637-4e91214c9341</BoundTo>
+      <id>98530791-f54a-488e-a73f-8ba0949e7453</id>
+      <recordtableid>a88d433b-b2a1-4632-9e24-3a68467ac6e4</recordtableid>
+    </None>
+    <None Include="M2.rxrec">
+      <BoundTo>8a12b9f0-ed8b-445a-9637-4e91214c9341</BoundTo>
+      <id>2ea63ce3-7070-433b-a7f0-355876d80dda</id>
+      <recordtableid>5dc02fb2-22b0-45ff-a082-2532a8551033</recordtableid>
+    </None>
+    <None Include="Recording1.rxrec">
+      <BoundTo>8a12b9f0-ed8b-445a-9637-4e91214c9341</BoundTo>
+      <id>d5d70e60-7822-4446-b0b0-fb110de94c5e</id>
+      <recordtableid>bd3d1886-cf66-47c0-85ca-27d12f3ae7e1</recordtableid>
+    </None>
+    <None Include="w3schools_Oktratas1Repository.rximg">
+      <BoundTo>8a12b9f0-ed8b-445a-9637-4e91214c9341</BoundTo>
+      <DependentUpon>w3schools_Oktratas1Repository.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>cb54244c-720c-46ce-8aed-358bb43b7d1f</id>
+    </None>
+    <None Include="w3schools_Oktratas1Repository.rxrep">
+      <id>8a12b9f0-ed8b-445a-9637-4e91214c9341</id>
+      <repoid>e81cd4d5-688b-4b13-9dff-cee34398b244</repoid>
+      <reporootid>8bd8eec5-2bc0-4eef-a791-e35cb03b7c3a</reporootid>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="w3schools_Oktratas1.rxtmg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>ca6b3bc4-0ab4-40ea-885f-4b545c9b7d2a</id>
+    </Content>
+    <Content Include="w3schools_Oktratas1.rxtst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>7cc72a71-d993-4383-8cd9-5f493629db57</id>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(RanorexTargetsPath)" Condition="Exists('$(RanorexTargetsPath)')" />
+</Project>

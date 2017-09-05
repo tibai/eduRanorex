@@ -1,0 +1,192 @@
+﻿<repository
+id="e81cd4d5-688b-4b13-9dff-cee34398b244"
+name="w3schools_Oktratas1Repository"
+rxversion="7.1">
+	<codegen
+	classname="w3schools_Oktratas1Repository"
+	namespace="w3schools_Oktratas1">
+	</codegen>
+	<rootfolder
+	capname="unknown"
+	id="8bd8eec5-2bc0-4eef-a791-e35cb03b7c3a"
+	isrooted="True"
+	name="Root"
+	searchtimeout="0ms"
+	usecache="True">
+		<appfolder
+		addcaps="container,webdocument"
+		capname="webdocument"
+		id="2f15ceb6-024f-4e5a-998b-2dd932476a4d"
+		isrooted="True"
+		name="W3SchoolsOnlineWebTutorials"
+		refpath="/dom[@domain='www.w3schools.com']"
+		searchtimeout="30000ms"
+		usecache="False">
+			<item
+			addcaps="unknown,webelement,atag"
+			capname="atag"
+			id="9874e036-df23-4f25-b84b-72ac23960663"
+			name="W3schools"
+			refimgid="d52aa764-db91-4d15-8cc4-e53a139c092e"
+			refpath="/dom[@domain='www.w3schools.com']/body/div[1]/div[1]/a[@innertext='w3schools']"
+			searchtimeout="30000ms">
+				/dom[@domain='www.w3schools.com']/body/div[1]/?/?/a[@innertext='w3schools']
+			</item>
+			<item
+			addcaps="unknown,webelement,atag"
+			capname="atag"
+			id="87b9cdc0-25b5-4848-aa64-8f42542b89c6"
+			name="LearnHTML"
+			refimgid="759060f2-7653-48cd-8f22-79750e8ec50e"
+			refpath="/dom[@domain='www.w3schools.com']//nav[#'mySidenav']/div/a[@innertext='Learn HTML']"
+			searchtimeout="30000ms">
+				/dom[@domain='www.w3schools.com']//nav[#'mySidenav']/?/?/a[@innertext='Learn HTML']
+			</item>
+			<item
+			addcaps="unknown,webelement,h1tag"
+			capname="h1tag"
+			id="d0e445e4-76bb-4903-bcff-d669ec474af7"
+			name="HTML5"
+			refimgid="10e57230-9577-45e4-9b52-b7dcd2ddb1bd"
+			refpath="/dom[@domain='www.w3schools.com']//div[#'main']/h1[@innertext='HTML5']"
+			searchtimeout="30000ms">
+				/dom[@domain='www.w3schools.com']//div[#'main']/h1[@innertext='HTML5']
+			</item>
+			<item
+			addcaps="unknown,webelement,itag"
+			capname="itag"
+			id="9ce202d1-d0d0-4372-8146-8d3329a54d75"
+			name="SomeITag"
+			refimgid="e941642a-0512-4bd5-8536-96c54833248d"
+			searchtimeout="30000ms">
+				/dom[@domain='www.w3schools.com']//a[@title='Search W3Schools']/i[@innertext='&#59394;']
+			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="90a6e4cd-22f7-490d-8aa2-89090e5f5e5b"
+			name="GscIId1"
+			refimgid="39877512-b944-4619-b558-9aec4ba1a12f"
+			refpath="/dom[@domain='www.w3schools.com']//input[#'gsc-i-id1']"
+			searchtimeout="30000ms">
+				/dom[@domain='www.w3schools.com']//input[#'gsc-i-id1']
+			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="7e8703b1-44c2-4a09-8c76-97e13624e86a"
+			name="Search"
+			refimgid="cc42b176-fe79-4b30-bc3d-8cd98d410e5a"
+			refpath="/dom[@domain='www.w3schools.com']//div[#'___gcse_0']/div/div/form/table[1]/tbody/tr/td[2]/input[@title='search']"
+			searchtimeout="30000ms">
+				/dom[@domain='www.w3schools.com']//div[#'___gcse_0']//form[@method='get']/table[1]/?/?/tr/td[2]/input[@title='search']
+			</item>
+			<item
+			addcaps="unknown,webelement,atag"
+			capname="atag"
+			id="d339b87a-7491-456b-a30c-37d6b5b40887"
+			name="SearchW3Schools"
+			refimgid="795ef43e-016e-426d-b0ba-bf3b495844d2"
+			refpath="/dom[@domain='www.w3schools.com']//div[#'topnav']/div/div[1]/a[@innertext='']"
+			searchtimeout="30000ms">
+				/dom[@domain='www.w3schools.com']//div[#'topnav']//a[@innertext='&#59394;']
+			</item>
+			<item
+			addcaps="unknown,webelement,atag"
+			capname="atag"
+			id="1d2f77d8-6cae-4f59-9a27-890e936c01c6"
+			name="ATagTutorial"
+			refimgid="fe6bc14f-717d-47e5-a14e-740637f18048"
+			refpath="/dom[@domain='www.w3schools.com']//div[#'___gcse_0']/div/div/div[1]/div[6]/div[2]/div/div/div[2]/div[1]/div[1]/div/a[@innertext=' Tutorial']"
+			searchtimeout="30000ms">
+				/dom[@domain='www.w3schools.com']//div[#'___gcse_0']/div/div/div[1]/div[6]/div[2]/div/div/div[2]/div[1]/div[1]/?/?/a[@innertext=' Tutorial']
+			</item>
+			<item
+			addcaps="unknown,webelement,h1tag"
+			capname="h1tag"
+			id="7eafe3d8-48a4-4666-bdec-469bce14e323"
+			name="CSS"
+			refimgid="63a1ee8c-ef75-4596-aa0f-34c7393b8675"
+			refpath="/dom[@domain='www.w3schools.com' and @caption='CSS Tutorial']//div[#'main']/h1[@innertext='CSS ']"
+			searchtimeout="30000ms">
+				/dom[@domain='www.w3schools.com']//div[#'main']/h1[@innertext='CSS ']
+			</item>
+			<item
+			addcaps="unknown,webelement,atag"
+			capname="atag"
+			id="1cc51460-66c9-4fd8-878d-c49ed108a175"
+			name="TryItYourself"
+			refimgid="16046517-3128-4e41-b2bf-4bd31724cbfa"
+			refpath="/dom[@domain='www.w3schools.com']//div[#'main']/div[4]/a[@innertext='Try it Yourself »']"
+			searchtimeout="30000ms">
+				/dom[@domain='www.w3schools.com']//div[#'main']/?/?/a[@innertext='Try it Yourself &#187;']
+			</item>
+			<item
+			addcaps="unknown,webelement,spantag"
+			capname="spantag"
+			id="2ffef929-8f0a-4430-9c88-5f43b847fd45"
+			name="PageTitle"
+			refimgid="4e3cffa6-4a54-40b5-a031-88ff3b9258d6"
+			refpath="/dom[@domain='www.w3schools.com' and @caption='Tryit Editor v3.5']//div[#'textareawrapper']/div/div[6]/div[1]/div/div/div/div[5]/pre[4]/span/span[@innertext='Page Title']"
+			searchtimeout="30000ms">
+				/dom[@domain='www.w3schools.com']//div[#'textareawrapper']/div/div[6]/div[1]/div/div/div/div[5]/pre[4]/?/?/span[@innertext='Page Title']
+			</item>
+			<item
+			addcaps="unknown,webelement,buttontag"
+			capname="buttontag"
+			id="6b7ac203-7a7c-4977-a33d-501a20cc81cd"
+			name="Run"
+			refimgid="990a2b50-32bd-4c97-b43f-6b69b88f8f2c"
+			refpath="/dom[@domain='www.w3schools.com' and @caption='Tryit Editor v3.5']/body/div[5]/div/button[@innertext='Run »']"
+			searchtimeout="30000ms">
+				/dom[@domain='www.w3schools.com']/body/div[5]/?/?/button[@innertext='Run &#187;']
+			</item>
+			<item
+			addcaps="unknown,webelement,spantag"
+			capname="spantag"
+			id="99db2c5a-df32-4f75-b510-350020b6f67c"
+			name="ThisIsAHeading"
+			refimgid="9711f877-b966-406c-8985-f02cac6986a3"
+			refpath="/dom[@domain='www.w3schools.com' and @caption='Tryit Editor v3.5']//div[#'textareawrapper']/div/div[6]/div[1]/div/div/div/div[5]/pre[8]/span/span[@innertext='This is a Heading']"
+			searchtimeout="30000ms">
+				/dom[@domain='www.w3schools.com']//div[#'textareawrapper']/div/div[6]/div[1]/div/div/div/div[5]/pre[8]/?/?/span[@innertext='This is a Heading']
+			</item>
+			<item
+			addcaps="unknown,webelement,h1tag"
+			capname="h1tag"
+			id="916dd1e0-f595-4c62-af37-651ac1899c3e"
+			name="Proba"
+			refimgid="734d5070-353a-4d2f-b87f-c0793e0a4c3c"
+			searchtimeout="30000ms">
+				/dom[@domain='www.w3schools.com']//iframe[#'iframeResult']/?/?/h1[@innertext=$varInput2]
+			</item>
+			<basepath>
+				/dom[@domain='www.w3schools.com']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAGHRFWHRTb2Z0d2FyZQBQYWlu
+dC5ORVQgdjMuMzE3g3eGAAACKklEQVQ4T43R20vTcRjHcS/6G4Kgyy6KKKjwJogIDBJjIBUt2YVD
+yoGVmWUWzozMC92YaWqeSE1s0dThOtjBWUlKkMxDudXU1lCU6XSepzu82+/nvNrX6APP1e95Xt/f
+9/vEbaWh7TO1xi4qmjspfWKhuLqN++VGtLqn5BTVk1lQRbRVHGn4X8nTNclYtD020smBYDjaHhsJ
+cIxPbY8YIr+9viEGgqGwDBxLvixXfGJaLCLdedUfCwRDyPDKWoiF5SAuT0AMSA+2BXhXZqmydFBu
+bkfbmkFpayPOyQW8CwHs7jUxIN1NOkEa1llLGA7bsYX7KbTd4GiuiUuVbxhyzTMwuiwGpFX5lkLU
+dFjJ+55Mw5yGGpsRtX6Kk2Ue9jWewtBRx9eRJTEg7XnWF+TBo25SzUmo3inINLjIKoPD1QXsbNvN
+6fxr9Az5xIDm9kOm5gLce+xEW/aF1BYlCmshSr2PMxm32HV3B8ez0/jQPycG1NklTMxsUGUaQaMD
+lc7EIcse4vXJJF18xX7FVUpq6njd5xUDKVeKcE2v4xib52bxIAdza9mbf4CE9OscUZo5q3nO295p
+zD0zYuBcegHOCb+8KpvDi6G5hRMX8klIKaei6b083PdjCdNHjxhQqO/gcPsj77CB27PO2OQa9j+r
+8tq+/VyODC/yaXBxeyBRlUPv8Dzt3eO86PrNs85Rml7+ot7soLrVTqVpsypMTjGQcD5L/vC/tTkV
+F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<basepath>
+		</basepath>
+	</rootfolder>
+	<variables>
+		<var
+		id="5e8218ab-6574-4e03-bb68-cfa9d1b0c267"
+		name="varInput2">
+			Proba2
+		</var>
+	</variables>
+</repository>

@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="5dc02fb2-22b0-45ff-a082-2532a8551033"
+mode="Global"
+rxversion="7.1">
+	<name>
+		M2
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="M2"
+	namespace="w3schools_Oktratas1">
+	</codegen>
+	<variables>
+		<var
+		id="fc3b77b6-a2ff-492d-9ea3-d5b81d44a495"
+		name="varB">
+			11111
+		</var>
+	</variables>
+	<recorditems>
+	</recorditems>
+	<repository
+	id="e81cd4d5-688b-4b13-9dff-cee34398b244"
+	name="w3schools_Oktratas1Repository"
+	relativepath="w3schools_Oktratas1Repository.rxrep"
+	rxversion="7.1">
+		<codegen
+		classname="w3schools_Oktratas1Repository"
+		namespace="w3schools_Oktratas1">
+		</codegen>
+		<rootfolder
+		id="8bd8eec5-2bc0-4eef-a791-e35cb03b7c3a"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		M2.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

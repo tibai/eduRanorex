@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modulegroupdoc
+rxversion="7.1">
+  <testsuiteentryhierarchy>
+    <flatlistofchildren>
+      <modulegroups
+      name="w3schools_Oktratas1"
+      id="2fd390cc-6da8-4f51-b01a-438a61c10f2b"/>
+    </flatlistofchildren>
+    <childhierarchy>
+      <modulegroups
+      name="w3schools_Oktratas1"
+      id="2fd390cc-6da8-4f51-b01a-438a61c10f2b"/>
+    </childhierarchy>
+  </testsuiteentryhierarchy>
+</modulegroupdoc>
