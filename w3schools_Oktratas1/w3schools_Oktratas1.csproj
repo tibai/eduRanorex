@@ -70,6 +70,18 @@
     <Compile Include="AssemblyInfo.cs">
       <id>6e694b0e-7050-4873-8a96-1f98d1cf28b5</id>
     </Compile>
+    <Compile Include="GoToHTML.cs">
+      <BoundTo>f49344a9-10a0-4788-9adc-70b9ded3d181</BoundTo>
+      <DependentUpon>GoToHTML.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>2e2b4489-7396-4a53-a0de-9e8256c93b09</id>
+    </Compile>
+    <Compile Include="GoToHTML.UserCode.cs">
+      <BoundTo>f49344a9-10a0-4788-9adc-70b9ded3d181</BoundTo>
+      <DependentUpon>GoToHTML.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>01b87dc2-0aa3-4090-a6a0-505789d14dcd</id>
+    </Compile>
     <Compile Include="M1.cs">
       <BoundTo>98530791-f54a-488e-a73f-8ba0949e7453</BoundTo>
       <DependentUpon>M1.rxrec</DependentUpon>
@@ -115,10 +127,27 @@
       <RepositoryCode>true</RepositoryCode>
       <id>4ba16af2-76db-4ca7-89bf-153122b42011</id>
     </Compile>
+    <Compile Include="writesAndCheck.cs">
+      <BoundTo>d8c98b6b-4480-4c80-8125-aa4a0c1cdead</BoundTo>
+      <DependentUpon>writesAndCheck.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>fc202b24-317a-47cf-ba13-40c59f4fc1c2</id>
+    </Compile>
+    <Compile Include="writesAndCheck.UserCode.cs">
+      <BoundTo>d8c98b6b-4480-4c80-8125-aa4a0c1cdead</BoundTo>
+      <DependentUpon>writesAndCheck.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>193f15ae-6b29-4399-8b99-4775e716250b</id>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config">
       <id>a448e3d1-d887-4857-85c0-e0d75310be22</id>
+    </None>
+    <None Include="GoToHTML.rxrec">
+      <BoundTo>8a12b9f0-ed8b-445a-9637-4e91214c9341</BoundTo>
+      <id>f49344a9-10a0-4788-9adc-70b9ded3d181</id>
+      <recordtableid>a4ac1d5a-984f-478b-9982-4c641c98a80c</recordtableid>
     </None>
     <None Include="M1.rxrec">
       <BoundTo>8a12b9f0-ed8b-445a-9637-4e91214c9341</BoundTo>
@@ -145,6 +174,11 @@
       <id>8a12b9f0-ed8b-445a-9637-4e91214c9341</id>
       <repoid>e81cd4d5-688b-4b13-9dff-cee34398b244</repoid>
       <reporootid>8bd8eec5-2bc0-4eef-a791-e35cb03b7c3a</reporootid>
+    </None>
+    <None Include="writesAndCheck.rxrec">
+      <BoundTo>8a12b9f0-ed8b-445a-9637-4e91214c9341</BoundTo>
+      <id>d8c98b6b-4480-4c80-8125-aa4a0c1cdead</id>
+      <recordtableid>082c774f-6bc4-4635-a05b-1ace50deeb60</recordtableid>
     </None>
   </ItemGroup>
   <ItemGroup>

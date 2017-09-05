@@ -24,56 +24,34 @@ namespace w3schools_Oktratas1
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Recording1 recording.
+    ///The GoToHTML recording.
     /// </summary>
-    [TestModule("bd3d1886-cf66-47c0-85ca-27d12f3ae7e1", ModuleType.Recording, 1)]
-    public partial class Recording1 : ITestModule
+    [TestModule("a4ac1d5a-984f-478b-9982-4c641c98a80c", ModuleType.Recording, 1)]
+    public partial class GoToHTML : ITestModule
     {
         /// <summary>
         /// Holds an instance of the w3schools_Oktratas1Repository repository.
         /// </summary>
         public static w3schools_Oktratas1Repository repo = w3schools_Oktratas1Repository.Instance;
 
-        static Recording1 instance = new Recording1();
+        static GoToHTML instance = new GoToHTML();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Recording1()
+        public GoToHTML()
         {
-            varInput = "Proba2";
-            varInput2 = "Proba2";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Recording1 Instance
+        public static GoToHTML Instance
         {
             get { return instance; }
         }
 
 #region Variables
-
-        /// <summary>
-        /// Gets or sets the value of variable varInput.
-        /// </summary>
-        [TestVariable("ba184cb3-0dfb-4db2-b0e2-c55b2e98b2d1")]
-        public string varInput
-        {
-            get { return repo.varInput; }
-            set { repo.varInput = value; }
-        }
-
-        /// <summary>
-        /// Gets or sets the value of variable varInput2.
-        /// </summary>
-        [TestVariable("5e8218ab-6574-4e03-bb68-cfa9d1b0c267")]
-        public string varInput2
-        {
-            get { return repo.varInput2; }
-            set { repo.varInput2 = value; }
-        }
 
 #endregion
 
@@ -101,9 +79,21 @@ namespace w3schools_Oktratas1
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'W3SchoolsOnlineWebTutorials'.", repo.W3SchoolsOnlineWebTutorials.SelfInfo, new RecordItemIndex(0));
-            Host.Current.CloseApplication(repo.W3SchoolsOnlineWebTutorials.Self, new Duration(0));
-            Delay.Milliseconds(0);
+            Report.Log(ReportLevel.Info, "Website", "Opening web site 'https://www.w3schools.com' with browser 'chrome' in normal mode.", new RecordItemIndex(0));
+            Host.Current.OpenBrowser("https://www.w3schools.com", "chrome", "", false, false, false, true, false);
+            Delay.Milliseconds(100);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='w3schools') on item 'W3SchoolsOnlineWebTutorials.W3schools'.", repo.W3SchoolsOnlineWebTutorials.W3schoolsInfo, new RecordItemIndex(1));
+            Validate.Attribute(repo.W3SchoolsOnlineWebTutorials.W3schoolsInfo, "InnerText", "w3schools");
+            Delay.Milliseconds(100);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'W3SchoolsOnlineWebTutorials.LearnHTML' at 102;11.", repo.W3SchoolsOnlineWebTutorials.LearnHTMLInfo, new RecordItemIndex(2));
+            repo.W3SchoolsOnlineWebTutorials.LearnHTML.Click("102;11");
+            Delay.Milliseconds(200);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='HTML5') on item 'W3SchoolsOnlineWebTutorials.HTML5'.", repo.W3SchoolsOnlineWebTutorials.HTML5Info, new RecordItemIndex(3));
+            Validate.Attribute(repo.W3SchoolsOnlineWebTutorials.HTML5Info, "InnerText", "HTML5");
+            Delay.Milliseconds(100);
             
         }
 

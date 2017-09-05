@@ -12,12 +12,6 @@ rxversion="7.1">
 			id="44576b8e-3d28-41ee-8474-be94e6861d4e"
 			name="TestCase">
 			</testcase>
-			<testmodule
-			id="76b39856-777f-4745-9ca3-ed06d4e5c6d0"
-			name="M1"
-			ref="a88d433b-b2a1-4632-9e24-3a68467ac6e4"
-			type="Recording">
-			</testmodule>
 			<testsuite
 			ReportTime="RelativeToTestSuiteStartTime"
 			TracingScreenshotMode="Foreground"
@@ -32,15 +26,15 @@ rxversion="7.1">
 			reportwriteinterval="30000ms">
 			</testsuite>
 			<testmodule
-			id="dbc8f70f-c639-451e-b6f2-e4e4f23e58fc"
-			name="M2"
-			ref="5dc02fb2-22b0-45ff-a082-2532a8551033"
+			id="c55becd4-15f1-44a1-99f3-e90757ca93ef"
+			name="GoToHTML"
+			ref="a4ac1d5a-984f-478b-9982-4c641c98a80c"
 			type="Recording">
 			</testmodule>
 			<testmodule
-			id="fd70ebcd-0adf-4a54-8a5a-b493e61f2fe5"
-			name="Recording1"
-			ref="bd3d1886-cf66-47c0-85ca-27d12f3ae7e1"
+			id="f661edbc-0808-4268-8ede-92dac01e6a89"
+			name="writesAndCheck"
+			ref="082c774f-6bc4-4635-a05b-1ace50deeb60"
 			type="Recording">
 			</testmodule>
 		</flatlistofchildren>
@@ -55,16 +49,12 @@ rxversion="7.1">
 					id="44576b8e-3d28-41ee-8474-be94e6861d4e"
 					name="TestCase">
 						<testmodule
-						id="76b39856-777f-4745-9ca3-ed06d4e5c6d0"
-						name="M1">
+						id="c55becd4-15f1-44a1-99f3-e90757ca93ef"
+						name="GoToHTML">
 						</testmodule>
 						<testmodule
-						id="dbc8f70f-c639-451e-b6f2-e4e4f23e58fc"
-						name="M2">
-						</testmodule>
-						<testmodule
-						id="fd70ebcd-0adf-4a54-8a5a-b493e61f2fe5"
-						name="Recording1">
+						id="f661edbc-0808-4268-8ede-92dac01e6a89"
+						name="writesAndCheck">
 						</testmodule>
 					</testcase>
 				</testcase>
