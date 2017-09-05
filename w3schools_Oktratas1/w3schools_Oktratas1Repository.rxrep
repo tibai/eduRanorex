@@ -160,6 +160,25 @@ rxversion="7.1">
 			searchtimeout="30000ms">
 				/dom[@domain='www.w3schools.com']//iframe[#'iframeResult']/?/?/h1[@innertext=$varInput]
 			</item>
+			<item
+			addcaps="unknown,webelement,spantag"
+			capname="spantag"
+			id="ecac65de-8310-4cdc-9b11-714bba691ae3"
+			name="Title"
+			refimgid="2a549a73-c55a-42fb-bcbe-c0f6958be757"
+			refpath="/dom[@domain='www.w3schools.com' and @caption='Tryit Editor v3.5']//div[#'textareawrapper']/div/div[6]/div[1]/div/div/div/div[5]/pre[4]/span/span[2]"
+			searchtimeout="30000ms">
+				/dom[@domain='www.w3schools.com']//div[#'textareawrapper']/div/div[6]/div[1]/div/div/div/div[5]/pre[4]/span/span[2]
+			</item>
+			<item
+			addcaps="unknown,webelement,spantag"
+			capname="spantag"
+			id="7e46299e-ac71-448a-84ab-f87aad62b27d"
+			name="SomeSpanTag"
+			refimgid="bf4d45da-95aa-4799-a459-b721c7f96a14"
+			searchtimeout="30000ms">
+				/dom[@domain='www.w3schools.com']//div[#'textareawrapper']/div/div[6]/div[1]/div/div/div/div[5]/pre[8]/span/span[3]
+			</item>
 			<basepath>
 				/dom[@domain='www.w3schools.com']
 			</basepath>
@@ -179,6 +198,77 @@ zD0zYuBcegHOCb+8KpvDi6G5hRMX8klIKaei6b083PdjCdNHjxhQqO/gcPsj77CB27PO2OQa9j+r
 F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 			</icon>
 		</appfolder>
+		<appfolder
+		addcaps="form,nativewindow"
+		capname="form"
+		id="cbafd293-74e0-43f4-9dae-2bde5cd426f2"
+		isrooted="True"
+		name="HTMLTutorialGoogleChrome"
+		refpath="/form[@title='HTML Tutorial - Google Chrome']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="container,accessible"
+			capname="container"
+			id="846747d0-3917-4234-9f5d-55d1291693d3"
+			name="Client"
+			refimgid="7685751f-33a2-43e6-bd35-9b089384403a"
+			refpath="/form[@title~'^HTML\ Tutorial\ -\ Google\ Ch']/container/container[2]/container[2]"
+			searchtimeout="30000ms">
+				/form[@title~'^HTML\ Tutorial\ -\ Google\ Ch']/container[@accessiblename='Google Chrome']/container[2]/container[2]
+			</item>
+			<basepath>
+				/form[@title~'^HTML\ Tutorial\ -\ Google\ Ch']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAALpSURBVDhPrZJrSFNhHMZXQSAEfchpLawM+9AX
+8UNgV8/O3KzNzVu70C5qU6GgIIMiFBIC6aIRSIF3t5zRPUzTUqP71szNykvmdo7QCAxJym06tp3z
+dDyu+hB+64EH3g//3+/9v/AK/mu+qNVxtDEnfUorv0RrFV2UWu6g82Uf6DxZN5UnrfPkkqbx/P0b
+YuP/xqPOSqENuaO0+gDog/tBF2SBA0HlZoLKIbmzJEjlZZlj439jV++Me56dvu1jgazJq5EHlhN4
+VWLGo5RM0AVkRgxdyvFK3e7yM2pfry4zNL4ILLeBSgxvNgGPknBOKYi0bxpiDS/Ybi25kNpczFQe
+VbAuJYGxU+V4a+vEg0eTbOvALPtmoBtU50lM35Fj7v4uzHfv9i/07nOH+4gdvGCrrfTh1o5SKKp1
+eCHfA3t7J87eDsBwNYicy0FUdMzi0+dJzNmPIPosA9GX+5jo64wQXhFiXpBsK7Un20qQ2lCEpoME
+7vZQPJx/JQhVbRAl9X409s3ii7MGrIME85YE6yQZ9p1ExguSrMUjm9rN2GwzQ3XRiIb+AA8qF1sT
+hLYuiNM3AphwWQC3jKuUayZYt1SxJLAUPU5qP4ylmlH/bCh6zOKH4VoABdwWp2zf0eXwYma4kodZ
+VybDDEnmI0OkhBeIrKb6jdeL8btl/Y14OjKD6gdzKGvy494rL4bft8I/bOAFjIuDnaQn7BCn84KN
+VlOZyGKKiKyFrMhahLRbJ5DXVYtjT26hou8xrvacxw93ISLubH517nYfM0jWLtiJFF6Q2KbbktCs
+r1pvMU0lWkz4WyMSG/SgXyr+vBtuCSKDZBNGNatRVbWSF/CBYEVii0Gb0GocE7YZQgkcLGzV49xN
+FcO4ZCx3a5QZIqfDTrEVlHRtjPo3wma9RthyyBffpse6Rh2+vlGEODAaHhT/5OHR2O9bLutbDgs5
+wd74Fp0y6Vp+oe95VmHEJVGF7WIi5MrYDmhWxUa5CAS/AHJY5UDHeBMWAAAAAElFTkSuQmCC
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,nativewindow"
+		capname="form"
+		id="85874ef2-c772-4173-858f-9f0743dcf7ac"
+		isrooted="True"
+		name="TryitEditorV35GoogleChrome"
+		refimgid="88ba0b8d-ba64-4272-9c2d-b8b75c3ea7ec"
+		refpath="/form[@title~'^Tryit\ Editor\ v3\.5\ -\ Googl']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<basepath>
+				/form[@title~'^Tryit\ Editor\ v3\.5\ -\ Googl']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAALpSURBVDhPrZJrSFNhHMZXQSAEfchpLawM+9AX
+8UNgV8/O3KzNzVu70C5qU6GgIIMiFBIC6aIRSIF3t5zRPUzTUqP71szNykvmdo7QCAxJym06tp3z
+dDyu+hB+64EH3g//3+/9v/AK/mu+qNVxtDEnfUorv0RrFV2UWu6g82Uf6DxZN5UnrfPkkqbx/P0b
+YuP/xqPOSqENuaO0+gDog/tBF2SBA0HlZoLKIbmzJEjlZZlj439jV++Me56dvu1jgazJq5EHlhN4
+VWLGo5RM0AVkRgxdyvFK3e7yM2pfry4zNL4ILLeBSgxvNgGPknBOKYi0bxpiDS/Ybi25kNpczFQe
+VbAuJYGxU+V4a+vEg0eTbOvALPtmoBtU50lM35Fj7v4uzHfv9i/07nOH+4gdvGCrrfTh1o5SKKp1
+eCHfA3t7J87eDsBwNYicy0FUdMzi0+dJzNmPIPosA9GX+5jo64wQXhFiXpBsK7Un20qQ2lCEpoME
+7vZQPJx/JQhVbRAl9X409s3ii7MGrIME85YE6yQZ9p1ExguSrMUjm9rN2GwzQ3XRiIb+AA8qF1sT
+hLYuiNM3AphwWQC3jKuUayZYt1SxJLAUPU5qP4ylmlH/bCh6zOKH4VoABdwWp2zf0eXwYma4kodZ
+VybDDEnmI0OkhBeIrKb6jdeL8btl/Y14OjKD6gdzKGvy494rL4bft8I/bOAFjIuDnaQn7BCn84KN
+VlOZyGKKiKyFrMhahLRbJ5DXVYtjT26hou8xrvacxw93ISLubH517nYfM0jWLtiJFF6Q2KbbktCs
+r1pvMU0lWkz4WyMSG/SgXyr+vBtuCSKDZBNGNatRVbWSF/CBYEVii0Gb0GocE7YZQgkcLGzV49xN
+FcO4ZCx3a5QZIqfDTrEVlHRtjPo3wma9RthyyBffpse6Rh2+vlGEODAaHhT/5OHR2O9bLutbDgs5
+wd74Fp0y6Vp+oe95VmHEJVGF7WIi5MrYDmhWxUa5CAS/AHJY5UDHeBMWAAAAAElFTkSuQmCC
+			</icon>
+		</appfolder>
 		<basepath>
 		</basepath>
 	</rootfolder>
@@ -186,11 +276,6 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 		<var
 		id="1fe4f8c3-0772-4996-b2ed-048d732a9471"
 		name="varInput">
-			Proba2
-		</var>
-		<var
-		id="5e8218ab-6574-4e03-bb68-cfa9d1b0c267"
-		name="varInput2">
 			Proba2
 		</var>
 	</variables>

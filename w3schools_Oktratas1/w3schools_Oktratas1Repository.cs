@@ -28,6 +28,8 @@ namespace w3schools_Oktratas1
     {
         static w3schools_Oktratas1Repository instance = new w3schools_Oktratas1Repository();
         w3schools_Oktratas1RepositoryFolders.W3SchoolsOnlineWebTutorialsAppFolder _w3schoolsonlinewebtutorials;
+        w3schools_Oktratas1RepositoryFolders.HTMLTutorialGoogleChromeAppFolder _htmltutorialgooglechrome;
+        w3schools_Oktratas1RepositoryFolders.TryitEditorV35GoogleChromeAppFolder _tryiteditorv35googlechrome;
 
         /// <summary>
         /// Gets the singleton class instance representing the w3schools_Oktratas1Repository element repository.
@@ -45,6 +47,8 @@ namespace w3schools_Oktratas1
             : base("w3schools_Oktratas1Repository", "/", null, 0, false, "8bd8eec5-2bc0-4eef-a791-e35cb03b7c3a", ".\\RepositoryImages\\w3schools_Oktratas1Repository8bd8eec5.rximgres")
         {
             _w3schoolsonlinewebtutorials = new w3schools_Oktratas1RepositoryFolders.W3SchoolsOnlineWebTutorialsAppFolder(this);
+            _htmltutorialgooglechrome = new w3schools_Oktratas1RepositoryFolders.HTMLTutorialGoogleChromeAppFolder(this);
+            _tryiteditorv35googlechrome = new w3schools_Oktratas1RepositoryFolders.TryitEditorV35GoogleChromeAppFolder(this);
         }
 
 #region Variables
@@ -59,18 +63,6 @@ namespace w3schools_Oktratas1
         {
             get { return _varInput; }
             set { _varInput = value; }
-        }
-
-        string _varInput2 = "Proba2";
-
-        /// <summary>
-        /// Gets or sets the value of variable varInput2.
-        /// </summary>
-        [TestVariable("5e8218ab-6574-4e03-bb68-cfa9d1b0c267")]
-        public string varInput2
-        {
-            get { return _varInput2; }
-            set { _varInput2 = value; }
         }
 
 #endregion
@@ -94,6 +86,24 @@ namespace w3schools_Oktratas1
         public virtual w3schools_Oktratas1RepositoryFolders.W3SchoolsOnlineWebTutorialsAppFolder W3SchoolsOnlineWebTutorials
         {
             get { return _w3schoolsonlinewebtutorials; }
+        }
+
+        /// <summary>
+        /// The HTMLTutorialGoogleChrome folder.
+        /// </summary>
+        [RepositoryFolder("cbafd293-74e0-43f4-9dae-2bde5cd426f2")]
+        public virtual w3schools_Oktratas1RepositoryFolders.HTMLTutorialGoogleChromeAppFolder HTMLTutorialGoogleChrome
+        {
+            get { return _htmltutorialgooglechrome; }
+        }
+
+        /// <summary>
+        /// The TryitEditorV35GoogleChrome folder.
+        /// </summary>
+        [RepositoryFolder("85874ef2-c772-4173-858f-9f0743dcf7ac")]
+        public virtual w3schools_Oktratas1RepositoryFolders.TryitEditorV35GoogleChromeAppFolder TryitEditorV35GoogleChrome
+        {
+            get { return _tryiteditorv35googlechrome; }
         }
     }
 
@@ -123,6 +133,8 @@ namespace w3schools_Oktratas1
             RepoItemInfo _runInfo;
             RepoItemInfo _thisisaheadingInfo;
             RepoItemInfo _probaInfo;
+            RepoItemInfo _titleInfo;
+            RepoItemInfo _somespantagInfo;
 
             /// <summary>
             /// Creates a new W3SchoolsOnlineWebTutorials  folder.
@@ -144,6 +156,8 @@ namespace w3schools_Oktratas1
                 _runInfo = new RepoItemInfo(this, "Run", "body/div[5]/?/?/button[@innertext='Run »']", 30000, null, "6b7ac203-7a7c-4977-a33d-501a20cc81cd");
                 _thisisaheadingInfo = new RepoItemInfo(this, "ThisIsAHeading", ".//div[#'textareawrapper']/div/div[6]/div[1]/div/div/div/div[5]/pre[8]/?/?/span[@innertext='This is a Heading']", 30000, null, "99db2c5a-df32-4f75-b510-350020b6f67c");
                 _probaInfo = new RepoItemInfo(this, "Proba", ".//iframe[#'iframeResult']/?/?/h1[@innertext=$varInput]", 30000, null, "916dd1e0-f595-4c62-af37-651ac1899c3e");
+                _titleInfo = new RepoItemInfo(this, "Title", ".//div[#'textareawrapper']/div/div[6]/div[1]/div/div/div/div[5]/pre[4]/span/span[2]", 30000, null, "ecac65de-8310-4cdc-9b11-714bba691ae3");
+                _somespantagInfo = new RepoItemInfo(this, "SomeSpanTag", ".//div[#'textareawrapper']/div/div[6]/div[1]/div/div/div/div[5]/pre[8]/span/span[3]", 30000, null, "7e46299e-ac71-448a-84ab-f87aad62b27d");
             }
 
             /// <summary>
@@ -503,6 +517,160 @@ namespace w3schools_Oktratas1
                 get
                 {
                     return _probaInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Title item.
+            /// </summary>
+            [RepositoryItem("ecac65de-8310-4cdc-9b11-714bba691ae3")]
+            public virtual Ranorex.SpanTag Title
+            {
+                get
+                {
+                    return _titleInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Title item info.
+            /// </summary>
+            [RepositoryItemInfo("ecac65de-8310-4cdc-9b11-714bba691ae3")]
+            public virtual RepoItemInfo TitleInfo
+            {
+                get
+                {
+                    return _titleInfo;
+                }
+            }
+
+            /// <summary>
+            /// The SomeSpanTag item.
+            /// </summary>
+            [RepositoryItem("7e46299e-ac71-448a-84ab-f87aad62b27d")]
+            public virtual Ranorex.SpanTag SomeSpanTag
+            {
+                get
+                {
+                    return _somespantagInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The SomeSpanTag item info.
+            /// </summary>
+            [RepositoryItemInfo("7e46299e-ac71-448a-84ab-f87aad62b27d")]
+            public virtual RepoItemInfo SomeSpanTagInfo
+            {
+                get
+                {
+                    return _somespantagInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The HTMLTutorialGoogleChromeAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("cbafd293-74e0-43f4-9dae-2bde5cd426f2")]
+        public partial class HTMLTutorialGoogleChromeAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _clientInfo;
+
+            /// <summary>
+            /// Creates a new HTMLTutorialGoogleChrome  folder.
+            /// </summary>
+            public HTMLTutorialGoogleChromeAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("HTMLTutorialGoogleChrome", "/form[@title~'^HTML\\ Tutorial\\ -\\ Google\\ Ch']", parentFolder, 30000, null, true, "cbafd293-74e0-43f4-9dae-2bde5cd426f2", "")
+            {
+                _clientInfo = new RepoItemInfo(this, "Client", "container[@accessiblename='Google Chrome']/container[2]/container[2]", 30000, null, "846747d0-3917-4234-9f5d-55d1291693d3");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("cbafd293-74e0-43f4-9dae-2bde5cd426f2")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("cbafd293-74e0-43f4-9dae-2bde5cd426f2")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Client item.
+            /// </summary>
+            [RepositoryItem("846747d0-3917-4234-9f5d-55d1291693d3")]
+            public virtual Ranorex.Container Client
+            {
+                get
+                {
+                    return _clientInfo.CreateAdapter<Ranorex.Container>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Client item info.
+            /// </summary>
+            [RepositoryItemInfo("846747d0-3917-4234-9f5d-55d1291693d3")]
+            public virtual RepoItemInfo ClientInfo
+            {
+                get
+                {
+                    return _clientInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The TryitEditorV35GoogleChromeAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("85874ef2-c772-4173-858f-9f0743dcf7ac")]
+        public partial class TryitEditorV35GoogleChromeAppFolder : RepoGenBaseFolder
+        {
+
+            /// <summary>
+            /// Creates a new TryitEditorV35GoogleChrome  folder.
+            /// </summary>
+            public TryitEditorV35GoogleChromeAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("TryitEditorV35GoogleChrome", "/form[@title~'^Tryit\\ Editor\\ v3\\.5\\ -\\ Googl']", parentFolder, 30000, null, true, "85874ef2-c772-4173-858f-9f0743dcf7ac", "")
+            {
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("85874ef2-c772-4173-858f-9f0743dcf7ac")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("85874ef2-c772-4173-858f-9f0743dcf7ac")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
                 }
             }
         }

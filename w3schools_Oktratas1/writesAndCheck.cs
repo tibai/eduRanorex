@@ -98,25 +98,41 @@ namespace w3schools_Oktratas1
             repo.W3SchoolsOnlineWebTutorials.TryItYourself.Click("94;20");
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'W3SchoolsOnlineWebTutorials.ThisIsAHeading' at 170;8.", repo.W3SchoolsOnlineWebTutorials.ThisIsAHeadingInfo, new RecordItemIndex(2));
-            repo.W3SchoolsOnlineWebTutorials.ThisIsAHeading.Click("170;8");
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'W3SchoolsOnlineWebTutorials.ThisIsAHeading' at 170;8.", repo.W3SchoolsOnlineWebTutorials.ThisIsAHeadingInfo, new RecordItemIndex(2));
+            //repo.W3SchoolsOnlineWebTutorials.ThisIsAHeading.Click("170;8");
+            //Delay.Milliseconds(200);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'W3SchoolsOnlineWebTutorials.SomeSpanTag' at 5;9.", repo.W3SchoolsOnlineWebTutorials.SomeSpanTagInfo, new RecordItemIndex(3));
+            repo.W3SchoolsOnlineWebTutorials.SomeSpanTag.Click("5;9");
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Back 9}{Back}{Back}{Back}{Back}{Back}{Back}{Back}{Delete}'.", new RecordItemIndex(3));
-            Keyboard.Press("{Back 9}{Back}{Back}{Back}{Back}{Back}{Back}{Back}{Delete}");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Right}{LShiftKey down}{Right}{Right}{Right}{Right}{Right}{Right}{Right}{Right}{Right}{Right}{Right}{Right}{Right}{Right}{Right}{Right}{Right}{LShiftKey up}{Delete}'.", new RecordItemIndex(4));
+            Keyboard.Press("{Right}{LShiftKey down}{Right}{Right}{Right}{Right}{Right}{Right}{Right}{Right}{Right}{Right}{Right}{Right}{Right}{Right}{Right}{Right}{Right}{LShiftKey up}{Delete}");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$varInput'.", new RecordItemIndex(4));
+            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Back 9}{Back}{Back}{Back}{Back}{Back}{Back}{Back}{Delete}'.", new RecordItemIndex(5));
+            //Keyboard.Press("{Back 9}{Back}{Back}{Back}{Back}{Back}{Back}{Back}{Delete}");
+            //Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$varInput'.", new RecordItemIndex(6));
             Keyboard.Press(varInput);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'W3SchoolsOnlineWebTutorials.Run' at 59;30.", repo.W3SchoolsOnlineWebTutorials.RunInfo, new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'W3SchoolsOnlineWebTutorials.Run' at 59;30.", repo.W3SchoolsOnlineWebTutorials.RunInfo, new RecordItemIndex(7));
             repo.W3SchoolsOnlineWebTutorials.Run.Click("59;30");
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText=$varInput) on item 'W3SchoolsOnlineWebTutorials.Proba'.", repo.W3SchoolsOnlineWebTutorials.ProbaInfo, new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText=$varInput) on item 'W3SchoolsOnlineWebTutorials.Proba'.", repo.W3SchoolsOnlineWebTutorials.ProbaInfo, new RecordItemIndex(8));
             Validate.Attribute(repo.W3SchoolsOnlineWebTutorials.ProbaInfo, "InnerText", varInput);
             Delay.Milliseconds(100);
+            
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HTMLTutorialGoogleChrome.Client' at 1432;11.", repo.HTMLTutorialGoogleChrome.ClientInfo, new RecordItemIndex(9));
+            //repo.HTMLTutorialGoogleChrome.Client.Click("1432;11");
+            //Delay.Milliseconds(200);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TryitEditorV35GoogleChrome' at 1812;29.", repo.TryitEditorV35GoogleChrome.SelfInfo, new RecordItemIndex(10));
+            repo.TryitEditorV35GoogleChrome.Self.Click("1812;29");
+            Delay.Milliseconds(200);
             
         }
 

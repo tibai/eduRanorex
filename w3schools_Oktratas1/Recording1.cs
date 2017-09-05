@@ -55,6 +55,18 @@ namespace w3schools_Oktratas1
 
 #region Variables
 
+        string _varInput2;
+
+        /// <summary>
+        /// Gets or sets the value of variable varInput2.
+        /// </summary>
+        [TestVariable("5e8218ab-6574-4e03-bb68-cfa9d1b0c267")]
+        public string varInput2
+        {
+            get { return _varInput2; }
+            set { _varInput2 = value; }
+        }
+
         /// <summary>
         /// Gets or sets the value of variable varInput.
         /// </summary>
@@ -63,16 +75,6 @@ namespace w3schools_Oktratas1
         {
             get { return repo.varInput; }
             set { repo.varInput = value; }
-        }
-
-        /// <summary>
-        /// Gets or sets the value of variable varInput2.
-        /// </summary>
-        [TestVariable("5e8218ab-6574-4e03-bb68-cfa9d1b0c267")]
-        public string varInput2
-        {
-            get { return repo.varInput2; }
-            set { repo.varInput2 = value; }
         }
 
 #endregion
@@ -101,8 +103,12 @@ namespace w3schools_Oktratas1
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'W3SchoolsOnlineWebTutorials'.", repo.W3SchoolsOnlineWebTutorials.SelfInfo, new RecordItemIndex(0));
-            Host.Current.CloseApplication(repo.W3SchoolsOnlineWebTutorials.Self, new Duration(0));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'W3SchoolsOnlineWebTutorials.SomeSpanTag' at 5;9.", repo.W3SchoolsOnlineWebTutorials.SomeSpanTagInfo, new RecordItemIndex(0));
+            repo.W3SchoolsOnlineWebTutorials.SomeSpanTag.Click("5;9");
+            Delay.Milliseconds(200);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Right}{LShiftKey down}{Right}{Right}{Right}{Right}{Right}{Right}{Right}{Right}{Right}{Right}{LShiftKey up}{Delete}'.", new RecordItemIndex(1));
+            Keyboard.Press("{Right}{LShiftKey down}{Right}{Right}{Right}{Right}{Right}{Right}{Right}{Right}{Right}{Right}{LShiftKey up}{Delete}");
             Delay.Milliseconds(0);
             
         }

@@ -39,24 +39,117 @@ rxversion="7.1">
 		</var>
 	</variables>
 	<recorditems>
-		<closeapprecorditem
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
 		enabled="True"
-		graceperiod="0ms"
-		method="CloseWindow"
+		loc="5;9"
+		movetime="300ms"
 		optional="False"
-		searchpropertyid="0a150fa4-2f08-4669-981b-cf3f05c62d75">
+		searchpropertyid="5a05c100-d03c-4485-a68c-babedfc8e005"
+		sx="-1754"
+		sy="345"
+		warnoutofbounds="False">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
 			<info
-			id="2f15ceb6-024f-4e5a-998b-2dd932476a4d"
-			sourcename="RepositoryEditor">
+			id="7e46299e-ac71-448a-84ab-f87aad62b27d"
+			sourcename="Recorder">
+				<element
+				capabilities="webelement, spantag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="2"
+				prefcap="spantag"
+				rect="-1759,336,10,22"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						cm-m-xml cm-tag cm-bracket
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						&gt;
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						span
+					</attribute>
+				</element>
 				<path>
-					/dom[@domain='www.w3schools.com']
+					/dom[@domain='www.w3schools.com']//div[#'textareawrapper']/div/div[6]/div[1]/div/div/div/div[5]/pre[4]/span/span[3]
 				</path>
 			</info>
-		</closeapprecorditem>
+			<helperscreenshot
+			guid="7060511d-c87c-4c4f-8887-bcbb6e39ad30">
+				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
+oooA/9k=
+			</helperscreenshot>
+		</mouseitem>
+		<keysequenceitem
+		KeySequence="{Right}{LShiftKey down}{Right}{Right}{Right}{Right}{Right}{Right}{Right}{Right}{Right}{Right}{LShiftKey up}{Delete}"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		presstime="100ms"
+		searchpropertyid="ab05e13f-f34a-4936-9ada-ec3c94513f72">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</keysequenceitem>
 	</recorditems>
 	<repository
 	id="e81cd4d5-688b-4b13-9dff-cee34398b244"

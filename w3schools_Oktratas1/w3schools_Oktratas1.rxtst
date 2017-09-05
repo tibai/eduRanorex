@@ -9,6 +9,7 @@ rxversion="7.1">
 			reportlevel="Info;20">
 			</testcase>
 			<testcase
+			datasource="NewConnector"
 			id="44576b8e-3d28-41ee-8474-be94e6861d4e"
 			name="TestCase">
 			</testcase>
@@ -36,6 +37,14 @@ rxversion="7.1">
 			name="writesAndCheck"
 			ref="082c774f-6bc4-4635-a05b-1ace50deeb60"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="Alma"
+					datasourceid="753171ba-ed61-40a0-9887-b20a9d43b048"
+					variableid="d7f53c95-a2e9-49bc-b1a0-ab5e78520a4f"
+					variablename="varInput">
+					</var>
+				</databinding>
 			</testmodule>
 		</flatlistofchildren>
 		<childhierarchy>
@@ -62,6 +71,30 @@ rxversion="7.1">
 		</childhierarchy>
 	</testsuiteentryhierarchy>
 	<datasources>
+		<DataSource
+		id="753171ba-ed61-40a0-9887-b20a9d43b048"
+		includefile="Unchecked"
+		lastknownrowcount="3"
+		name="NewConnector"
+		type="Ranorex.Core.Data.CsvDataConnector"
+		withheaders="True">
+			<lastknowncolumns>
+				<column>
+					Alma
+				</column>
+				<column>
+					korte
+				</column>
+				<column>
+					barack
+				</column>
+			</lastknowncolumns>
+			<maskedcolumns>
+			</maskedcolumns>
+			<file>
+				C:\Users\Tibai\Documents\Ranorex\RanorexStudio Projects\w3schools_Oktratas1\testData\input.csv
+			</file>
+		</DataSource>
 	</datasources>
 	<testconfigurations
 	default="TestRun">
