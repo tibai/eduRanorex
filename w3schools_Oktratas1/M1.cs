@@ -67,26 +67,14 @@ namespace w3schools_Oktratas1
             set { _varA = value; }
         }
 
-        string _varInput;
-
         /// <summary>
         /// Gets or sets the value of variable varInput.
         /// </summary>
         [TestVariable("a2a6464f-8ea4-4f0c-bf9e-d075ac1afb11")]
         public string varInput
         {
-            get { return _varInput; }
-            set { _varInput = value; }
-        }
-
-        /// <summary>
-        /// Gets or sets the value of variable varInput2.
-        /// </summary>
-        [TestVariable("5e8218ab-6574-4e03-bb68-cfa9d1b0c267")]
-        public string varInput2
-        {
-            get { return repo.varInput2; }
-            set { repo.varInput2 = value; }
+            get { return repo.varInput; }
+            set { repo.varInput = value; }
         }
 
 #endregion

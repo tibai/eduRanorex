@@ -55,16 +55,14 @@ namespace w3schools_Oktratas1
 
 #region Variables
 
-        string _varInput;
-
         /// <summary>
         /// Gets or sets the value of variable varInput.
         /// </summary>
         [TestVariable("ba184cb3-0dfb-4db2-b0e2-c55b2e98b2d1")]
         public string varInput
         {
-            get { return _varInput; }
-            set { _varInput = value; }
+            get { return repo.varInput; }
+            set { repo.varInput = value; }
         }
 
         /// <summary>
@@ -119,7 +117,31 @@ namespace w3schools_Oktratas1
             Validate.Attribute(repo.W3SchoolsOnlineWebTutorials.HTML5Info, "InnerText", "HTML5");
             Delay.Milliseconds(100);
             
-            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'W3SchoolsOnlineWebTutorials'.", repo.W3SchoolsOnlineWebTutorials.SelfInfo, new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'W3SchoolsOnlineWebTutorials.TryItYourself' at 94;20.", repo.W3SchoolsOnlineWebTutorials.TryItYourselfInfo, new RecordItemIndex(4));
+            repo.W3SchoolsOnlineWebTutorials.TryItYourself.Click("94;20");
+            Delay.Milliseconds(200);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'W3SchoolsOnlineWebTutorials.ThisIsAHeading' at 170;8.", repo.W3SchoolsOnlineWebTutorials.ThisIsAHeadingInfo, new RecordItemIndex(5));
+            repo.W3SchoolsOnlineWebTutorials.ThisIsAHeading.Click("170;8");
+            Delay.Milliseconds(200);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Back 9}{Back}{Back}{Back}{Back}{Back}{Back}{Back}{Delete}'.", new RecordItemIndex(6));
+            Keyboard.Press("{Back 9}{Back}{Back}{Back}{Back}{Back}{Back}{Back}{Delete}");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$varInput'.", new RecordItemIndex(7));
+            Keyboard.Press(varInput);
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'W3SchoolsOnlineWebTutorials.Run' at 59;30.", repo.W3SchoolsOnlineWebTutorials.RunInfo, new RecordItemIndex(8));
+            repo.W3SchoolsOnlineWebTutorials.Run.Click("59;30");
+            Delay.Milliseconds(200);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText=$varInput) on item 'W3SchoolsOnlineWebTutorials.Proba'.", repo.W3SchoolsOnlineWebTutorials.ProbaInfo, new RecordItemIndex(9));
+            Validate.Attribute(repo.W3SchoolsOnlineWebTutorials.ProbaInfo, "InnerText", varInput);
+            Delay.Milliseconds(100);
+            
+            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'W3SchoolsOnlineWebTutorials'.", repo.W3SchoolsOnlineWebTutorials.SelfInfo, new RecordItemIndex(10));
             Host.Current.CloseApplication(repo.W3SchoolsOnlineWebTutorials.Self, new Duration(0));
             Delay.Milliseconds(0);
             

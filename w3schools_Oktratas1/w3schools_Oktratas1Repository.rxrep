@@ -158,7 +158,7 @@ rxversion="7.1">
 			name="Proba"
 			refimgid="734d5070-353a-4d2f-b87f-c0793e0a4c3c"
 			searchtimeout="30000ms">
-				/dom[@domain='www.w3schools.com']//iframe[#'iframeResult']/?/?/h1[@innertext=$varInput2]
+				/dom[@domain='www.w3schools.com']//iframe[#'iframeResult']/?/?/h1[@innertext=$varInput]
 			</item>
 			<basepath>
 				/dom[@domain='www.w3schools.com']
@@ -183,6 +183,11 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 		</basepath>
 	</rootfolder>
 	<variables>
+		<var
+		id="1fe4f8c3-0772-4996-b2ed-048d732a9471"
+		name="varInput">
+			Proba2
+		</var>
 		<var
 		id="5e8218ab-6574-4e03-bb68-cfa9d1b0c267"
 		name="varInput2">

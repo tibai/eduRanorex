@@ -49,6 +49,18 @@ namespace w3schools_Oktratas1
 
 #region Variables
 
+        string _varInput = "Proba2";
+
+        /// <summary>
+        /// Gets or sets the value of variable varInput.
+        /// </summary>
+        [TestVariable("1fe4f8c3-0772-4996-b2ed-048d732a9471")]
+        public string varInput
+        {
+            get { return _varInput; }
+            set { _varInput = value; }
+        }
+
         string _varInput2 = "Proba2";
 
         /// <summary>
@@ -131,7 +143,7 @@ namespace w3schools_Oktratas1
                 _pagetitleInfo = new RepoItemInfo(this, "PageTitle", ".//div[#'textareawrapper']/div/div[6]/div[1]/div/div/div/div[5]/pre[4]/?/?/span[@innertext='Page Title']", 30000, null, "2ffef929-8f0a-4430-9c88-5f43b847fd45");
                 _runInfo = new RepoItemInfo(this, "Run", "body/div[5]/?/?/button[@innertext='Run »']", 30000, null, "6b7ac203-7a7c-4977-a33d-501a20cc81cd");
                 _thisisaheadingInfo = new RepoItemInfo(this, "ThisIsAHeading", ".//div[#'textareawrapper']/div/div[6]/div[1]/div/div/div/div[5]/pre[8]/?/?/span[@innertext='This is a Heading']", 30000, null, "99db2c5a-df32-4f75-b510-350020b6f67c");
-                _probaInfo = new RepoItemInfo(this, "Proba", ".//iframe[#'iframeResult']/?/?/h1[@innertext=$varInput2]", 30000, null, "916dd1e0-f595-4c62-af37-651ac1899c3e");
+                _probaInfo = new RepoItemInfo(this, "Proba", ".//iframe[#'iframeResult']/?/?/h1[@innertext=$varInput]", 30000, null, "916dd1e0-f595-4c62-af37-651ac1899c3e");
             }
 
             /// <summary>
